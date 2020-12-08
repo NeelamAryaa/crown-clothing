@@ -11,6 +11,8 @@ import {setCurrentUser} from './redux/user/user.actions';
 import {selectCurrentUser} from './redux/user/user.selectors';
 import {createStructuredSelector} from 'reselect'
 import CheckoutPage from "./components/pages/checkout/checkout";
+// import collection from "./components/pages/collection/collection";
+// import collection from "./components/pages/collection/collection";
 
 
 class App extends Component {
@@ -33,8 +35,8 @@ class App extends Component {
       }
       else
       setCurrentUser(userAuth); 
-
-    })
+      
+    }) 
   }
 
   componentWillUnmount() {
